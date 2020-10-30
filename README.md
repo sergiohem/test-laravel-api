@@ -24,7 +24,7 @@ Este comando adicionará todos os pacotes do vendor presentes no projeto.
 
     php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
     
-##### 2) Configurando o arquivo .env
+#### 2) Configurando o arquivo .env
 
 2.1) Utilize o arquivo .env.example presente na pasta raiz do projeto e o replique criando seu arquivo .env
 2.2) Altere as configurações de banco de dados no seu arquivo .env criado, com as credenciais do seu banco.
@@ -40,7 +40,7 @@ Este comando adicionará todos os pacotes do vendor presentes no projeto.
         
     php artisan jwt:secret
     
-##### 3) Configurando o banco de dados
+#### 3) Configurando o banco de dados
 
 3.1) O banco de dados utilizado para o projeto é o MySQL. Crie um schema no seu gerenciador de preferência para que ele receba as tabelas que serão geradas no próximo item (lembre-se de utilizar o mesmo nome que definiu no arquivo .env).
 3.2) Como o schema criado, execute o seguinte comando para gerar as tabelas:
@@ -51,7 +51,7 @@ Este comando adicionará todos os pacotes do vendor presentes no projeto.
 
     php artisan db:seed
     
-##### 4) Executando o projeto
+#### 4) Executando o projeto
 
 4.1) Para executar o projeto em seu ambiente local, execute o comando a seguir:
 
@@ -61,9 +61,9 @@ Por padrão, a API será executada em http://localhost:8000. Caso queira alterar
 
     php artisan serve --port {SUBSTITUA PELA PORTA DESEJADA}
 
-##### 6) Rotas (endpoints) da API
+#### 5) Rotas (endpoints) da API
 
-6.1) Seguem abaixo as rotas da API, juntamente com seus tipos de requisição e funções no projeto:
+5.1) Seguem abaixo as rotas da API, juntamente com seus tipos de requisição e funções no projeto:
 
 | Rota | Tipo | Função |
 | ---- | ------------------ | ------ |
@@ -88,9 +88,9 @@ Por padrão, a API será executada em http://localhost:8000. Caso queira alterar
 
 Para realizar as chamadas de todas as requisições, com exceção da rota  /api/register, é necessário fornecer como autorização o Bearer Token, gerado pelo JWT no momento que a rota /api/login é chamada.
 
-##### 7) Modelos de body JSON para requisições POST e PUT
+#### 6) Modelos de body JSON para requisições POST e PUT
 
-7.1) /api/register - Cadastro de usuário (POST)
+6.1) /api/register - Cadastro de usuário (POST)
 
 ```json
 {
@@ -100,7 +100,7 @@ Para realizar as chamadas de todas as requisições, com exceção da rota  /api
 }
 ```
 
-7.2) /api/login - Login de usuário (POST)
+6.2) /api/login - Login de usuário (POST)
 
 ```json
 {
@@ -109,7 +109,7 @@ Para realizar as chamadas de todas as requisições, com exceção da rota  /api
 }
 ```
 
-7.3) /api/categorias - Cadastro de categorias (POST)
+6.3) /api/categorias - Cadastro de categorias (POST)
 
 ```json
 {
@@ -117,7 +117,7 @@ Para realizar as chamadas de todas as requisições, com exceção da rota  /api
 }
 ```
 
-7.4) /api/categorias/:id - Atualização de categorias (PUT)
+6.4) /api/categorias/:id - Atualização de categorias (PUT)
 
 ```json
 {
@@ -125,7 +125,7 @@ Para realizar as chamadas de todas as requisições, com exceção da rota  /api
 }
 ```
 
-7.5) /api/fornecedores - Cadastro de fornecedores (POST)
+6.5) /api/fornecedores - Cadastro de fornecedores (POST)
 
 ```json
 {
@@ -145,7 +145,7 @@ Para realizar as chamadas de todas as requisições, com exceção da rota  /api
 }
 ```
 
-7.6) /api/fornecedores/:id - Atualização de fornecedores (PUT)
+6.6) /api/fornecedores/:id - Atualização de fornecedores (PUT)
 
 ```json
 {
@@ -165,7 +165,7 @@ Para realizar as chamadas de todas as requisições, com exceção da rota  /api
 }
 ```
 
-7.7) /api/produtos - Cadastro de produtos (POST)
+6.7) /api/produtos - Cadastro de produtos (POST)
 
 ```json
 {
@@ -185,7 +185,7 @@ Para realizar as chamadas de todas as requisições, com exceção da rota  /api
 }
 ```
 
-7.8) /api/produtos/:id - Atualização de produtos (PUT)
+6.8) /api/produtos/:id - Atualização de produtos (PUT)
 
 ```json
 {
