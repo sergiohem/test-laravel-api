@@ -156,7 +156,8 @@ class CategoriaController extends Controller
 
         try {
 
-            $categoria->fill($request->all())->save();
+            $categoria->nome = $request->nome;
+            $categoria->save();
 
             DB::commit();
 

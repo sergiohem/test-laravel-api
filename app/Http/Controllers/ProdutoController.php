@@ -87,7 +87,7 @@ class ProdutoController extends Controller
         try {
             $produto->nome = $request->nome;
             //Protegendo contra inserção de scripts maliciosos em um possível textarea
-            $produto->descricao = htmlentities($request->descricao);
+            $produto->descricao = isset($request->descricao) && $request->descricao != '' ? htmlentities($request->descricao) : null;
             $produto->idCategoria = $request->idCategoria;
             $produto->save();
 
@@ -191,7 +191,7 @@ class ProdutoController extends Controller
         try {
             $produto->nome = $request->nome;
             //Protegendo contra inserção de scripts maliciosos em um possível textarea
-            $produto->descricao = htmlentities($request->descricao);
+            $produto->descricao = isset($request->descricao) && $request->descricao != '' ? htmlentities($request->descricao) : null;
             $produto->idCategoria = $request->idCategoria;
             $produto->save();
 
