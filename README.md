@@ -29,7 +29,7 @@ Este comando adicionará todos os pacotes do vendor presentes no projeto.
 2.1) Utilize o arquivo .env.example presente na pasta raiz do projeto e o replique criando seu arquivo .env
 2.2) Altere as configurações de banco de dados no seu arquivo .env criado, com as credenciais do seu banco.
 
-> DB_CONNECTION=mysql
+    DB_CONNECTION=mysql
     DB_HOST={SUBSTITUA PELO HOST}
     DB_PORT={SUBSTITUA PELA PORTA}
     DB_DATABASE={SUBSTITUA PELO SCHEMA}
