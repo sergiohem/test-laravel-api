@@ -159,7 +159,7 @@ Para realizar as chamadas de todas as requisições, com exceção da rota  /api
     "estado": "MG",
     "telefones": [
         "(32) 93333-3333",
-        "(32) 95555-5555",
+        "(32) 95555-5555"
     ]
 }
 ```
@@ -195,7 +195,7 @@ Para realizar as chamadas de todas as requisições, com exceção da rota  /api
         {
             "idFornecedor": "1",
             "custo": "20.50"
-        },
+        }
     ]
 }
 ```
