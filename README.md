@@ -13,6 +13,7 @@ Este é um projeto desenvolvido em PHP utilizando o framework Laravel (versão 7
 #### 1) Instalação do Composer
 
 1.1) Baixe e instale o Composer (https://getcomposer.org/download/) em sua máquina, caso ainda não tenha instalado.
+
 1.2) Na pasta raiz do projeto execute o seguinte comando:
     
     composer update
